@@ -42,12 +42,16 @@ Modificare il programma al punto precedente considerando che il numero di voti d
 In pratica, il programma dovrà chiedere all'utente di inserire il numero __nvoti__ di voti da registrare e poi caricare gli __nvoti__ voti ad uno ad uno controllando, per ogni voto inserito sia valido (vedi Esercizio 5).
 
 ## Esercizio 7
+
+Modificare il programma scritto nell'esercizio 6 nel seguente modo. Dichiarare un vettore di 30 interi. Registrare i voti _validi_ inseriti nel vettore fino a quando l'utente non inserisce il valore sentinella zero. Il valore sentinella zero non deve essere registrato nell'array e sara` cura dell'utente non inserire piu` di 30 voti. Determinare e stampare a video il numero di voti inseriti e la media aritmetica dei voti.
+
+## Esercizio 8
 Scrivere il codice che implementa l'algoritmo di Euclide per il calcolo del Massimo Comun Divisore (MCD) visto a lezione, con le seguenti specifiche
 1. Se anche solo uno degli operandi fosse negativo, il programma dovrà  stampare il messaggio: __Non funziono su numeri negativi__
 1. Se anche solo uno dei due numeri è 0, il programma deve stampare: __Operazione non definita__
 1. Altrimenti, il programma deve stampare il MCD ottenuto con l'algoritmo.
 
-## Esercizion 8
+## Esercizion 9
 
 Facendo riferimento alle dipense PreLab3.pdf, dichiarare, definire e testare una funzione che, presi in ingresso due valori (che supporremo strettamente positivi), restituisca il MCD dei numeri inseriti.
 
