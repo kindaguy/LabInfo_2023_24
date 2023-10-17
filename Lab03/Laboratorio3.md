@@ -10,7 +10,7 @@ Niente spazi tra . e / e tra / e nomefile
 - convenzionalmente il file sorgente si indica con estensione .C oppure .cpp oppure .cxx. Questo consente, tra l'altro, anche a gedit di inferire la tipologia di contenuto del file e evidenziare la sintassi.
 
 ## Esercizio 1
-Scrivere un programma che stampi a video il modulo (valore assoluto) di un numero razionale (__float__) letto da tastiera.
+Scrivere un programma che stampi a video il modulo (valore assoluto) di un numero razionale (__float__) letto da tastiera. Suggerimento: verificate online come usare la funzione __fabs__.
 
 ## Esercizio 2
 
