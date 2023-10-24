@@ -14,7 +14,7 @@ Svolgere l'esercizio usando prima un ciclo __while__ precondizionale e un contat
 
 Modificare il programma al punto precedente in modo tale che l'utente possa terminare l'inserimento dei dati prima dell'inserimento dei 10 valori interi inserendo il valore sentinella 0. Notate che il valore sentinella non va inserito nell'array, perché non è un dato. Terminato l'inserimento il programma dovrà stampare a video il numero di dati caricati e tutti e soli i dati inseriti.
 
-Anche in questo caso, implementate prima il programma usando prima un ciclo __while__ precondizionale e poi (insieme) vedremo l'uso del ciclo __for__ per fare la stessa cosa.
+SUGGERIMENTO: il numero di dati che verrà inserito non è fissato a priori. Questo suggerisce l'uso di un ciclo  __while__ precondizionale.
 
 ## Esercizio 3
 
@@ -24,6 +24,7 @@ Definire una funzione di nome __leggiValido__ che:
 2. chiede all'utente di inserire un valore e controlla che il valore inserito sia nell'intervallo __[min,max]__, fino a che il valore inserito non è _valido_, ovvero nell'intervallo.
 3. restituisce il primo valore _valido_ inserito dall'utente.
 
+NOTA: si tratta di una modifica semplice della funzione definita nell'Esercizio 3 del Lab03 di settimana scorsa....
 
 ## Esercizio 4
 
@@ -59,13 +60,8 @@ Definire una funzione __isOutlier__ che, preso in ingresso un valore intero __va
 P.S.: di che tipo è il valore restituito dalla funzione?
 P.P.S.: __|a| = fabs(a)__ (__fabs__ definita in __cmath__).
 
+
 ## Esercizio 7
-
-Scrivere le funzioni __minimoArray__ e __massimoArray__ che preso in ingresso un array di __float__ e un intero che indica il numero di dati presenti nell'array, restituiscano rispettivamente la _posizione_ del minimo e del massimo valore contenuto nell'array.
-
-Scrivere quindi un programma che, caricato un array di __float__ di 40 elementi con qualche valore, usi le funzioni definite per determinare il valore minimo e massimo inseriti e  li stampi a video.
-
-## Esercizio 8
 
 Scrivere una funzione
 
@@ -75,19 +71,32 @@ che scambi il contenuto delle variabili intere __v1__ e __v2__.
 
 Scrivere quindi una funzione 
 
-__void scambia(int v[])__
+__void scambia(int v[], int n_,int i, int j)__
 
-che scambi le prime due componenti di un vettore (di almeno due elementi).
+che scambi le componenti di un vettore (di __n__ elementi) in posizione __i__ e __j__. La funzione dovrà controllare che entrambi gli indici siano all'interno del range __[0,1,..,n-1]__. In caso il controllo fosse negativo (almeno uno dei due indici fuori range) la funzione dovrà stampare a video il messaggio "Indici fuori range"  e non fare nulla.
 
 Verificare il comportamento delle due funzioni.
 
 NOTA: __void__: è la parola chiave del C++ per indicare un "non tipo". Le funzioni scambia, in effetti, non restituiscono nulla, operano solo lo scambio.
 
+
+## Esercizio 8
+
+Scrivere una funzione __int deleteEntrySwap(float v[], int size, int used,  int where)__ che, preso in ingresso un vettore di __float__ di dimensione __n__, contenente __used__ dati, elimini l'elemento in posizione __where__ sovrascrivendo il dato ivi contenuto con l'ultimo dato (valido) dell'array (ovvero in posizione __used-1__). La funzione dovrà restituire il nuovo numero di elementi validi dell'array (__used - 1__). ATTENZIONE: la funzione dovrà controllare che __where__ sia nel range di indici validi dell'array, ovvero __0....used-1__. In caso contrario la funzione dovrà  limitarsi a stampare il messaggio "Eliminazione non possibile: indice fuori range"  e restituire il valore __used__.
+
+
 ## Esercizio 9
+
+Scrivere una funzione __int deleteEntryShift(float v[], int size, int used,  int where)__ che, preso in ingresso un vettore di __float__ di dimensione __n__, contenente __used__ dati, elimini l'elemento in posizione __where__ sovrascrivendo il dato ivi contenuto con il dato successivo e "shiftando" tutti gli elementi successivi a sinistra di una posizione. Come nell'esercizio precedente, la funzione dovrà restituire il nuovo numero di elementi validi dell'array (__used - 1__) e rilevare eventuali richieste di cancellazione di un dato non presente.
+
+
+
+
+
 
 Scrivere una funzione __balance__ che:
 
-- Legga da tastiera una sequenza di valori interi (strettamente positivi o strettamente negativi) terminata dal valore sentinella zero.
+- Legga da tastiera una sequenza di valori interi terminata dal valore sentinella zero. NOTA: il valore zero non deve essere considerato come valore valido.
 - Determini se il numero degli elementi positivi inseriti è maggiore del numero degli elementi negativi inseriti. In tal caso la funzione deve restituire il valore __true__; altrimenti la funzione deve restituire il valore __false__.
 
 NOTA: quale è il tipo del _dominio_ della funzione? E del codominio?
