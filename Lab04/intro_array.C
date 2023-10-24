@@ -7,6 +7,15 @@
 
 
 using namespace std;
+//Stampa gli elementi dell'array
+void stampaArray(int [],int);
+
+//Caricamento: restituisce il numero di elementi caricati
+int caricaArray(int [],int);
+
+//Caricamento: restituisce il numero di elementi caricati
+int caricaArrayStop(int [],int);
+
 
 int main(){
     
@@ -21,4 +30,41 @@ int main(){
     cout << endl << a[0] << endl;
 
     return 0;
+}
+
+//Stampa gli elementi dell'array
+void stampaArray(int a[],int used){
+
+    for(int i =0; i<used; i++){
+        cout << endl << "elemento " << i << ": " << a[i];
+    }
+    cout << endl;
+}
+
+//Caricamento: restituisce il numero di elementi caricati
+int caricaArray(int a[], int size){
+    for(int i=0; i<size; i++){
+        cout << " Inserire valore intero:";
+        cin >> a[i];
+    }
+    return size;
+
+}
+
+//Soluzione esercizio 2
+int caricaArrayStop(int a[], int size){
+    int conta = 0;
+    int appo;
+
+    cin >> appo;
+    while(appo!=0 and conta<size){
+        a[conta] = appo;
+        conta++;
+
+        if(conta!=size) cin >> appo;
+    }
+    
+   
+    return conta;
+
 }
