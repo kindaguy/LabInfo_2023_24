@@ -1,5 +1,10 @@
 # Laboratorio 4:  array, ciclo for e funzioni
 
+## Intro
+
+- Funzioni: dove e come.
+- Array: una buona prassi.
+- Direttive a preprocessore: costanti.
 
 ## Esercizio 1
 
@@ -88,21 +93,3 @@ Scrivere una funzione __int deleteEntrySwap(float v[], int size, int used,  int 
 ## Esercizio 9
 
 Scrivere una funzione __int deleteEntryShift(float v[], int size, int used,  int where)__ che, preso in ingresso un vettore di __float__ di dimensione __n__, contenente __used__ dati, elimini l'elemento in posizione __where__ sovrascrivendo il dato ivi contenuto con il dato successivo e "shiftando" tutti gli elementi successivi a sinistra di una posizione. Come nell'esercizio precedente, la funzione dovrà restituire il nuovo numero di elementi validi dell'array (__used - 1__) e rilevare eventuali richieste di cancellazione di un dato non presente.
-
-
-
-
-
-
-Scrivere una funzione __balance__ che:
-
-- Legga da tastiera una sequenza di valori interi terminata dal valore sentinella zero. NOTA: il valore zero non deve essere considerato come valore valido.
-- Determini se il numero degli elementi positivi inseriti è maggiore del numero degli elementi negativi inseriti. In tal caso la funzione deve restituire il valore __true__; altrimenti la funzione deve restituire il valore __false__.
-
-NOTA: quale è il tipo del _dominio_ della funzione? E del codominio?
-
-## Esercizio 10
-
-Scrivere una funzione __detectSeq__ che, letta una sequenza di valori interi positivi terminata dal valore sentinella zero determini se nella sequenza inserita sono stati inseriti almeno una volta 4 valori consecutivi strettamente maggiori di 10. In tal caso, la funzione dovrà restituire __true__, altrimenti la funzione dovrà restituire __false__.
-
-Attenzione: la funzione dovrà ignorare eventuali valori negativi inseriti.
