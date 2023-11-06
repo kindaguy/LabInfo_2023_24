@@ -1,5 +1,6 @@
 {
    "files.associations": {
-      "sol_es3.C": "cpp"
+      "sol_es3.C": "cpp",
+      "libArray.C": "cpp"
    }
 }
