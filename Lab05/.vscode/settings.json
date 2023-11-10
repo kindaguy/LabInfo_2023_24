@@ -1,6 +1,7 @@
 {
    "files.associations": {
       "sol_es3.C": "cpp",
-      "libArray.C": "cpp"
+      "libArray.C": "cpp",
+      "eliminazione_da_array.C": "cpp"
    }
 }
