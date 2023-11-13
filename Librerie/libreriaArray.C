@@ -1,4 +1,4 @@
-#include "libreria.h"
+#include "libreriaArray.h"
 
 
 int caricaDatiFile(char nomefile[], float vdati[], int maxdati){
@@ -73,3 +73,62 @@ int eliminaShift(float v[], int pos, int ndati){
 
 }
 
+
+int pos_min(float v[], int ind_min, int ind_max){
+    
+    int pos_min = ind_min;
+    float min = v[ind_min];
+    //Determino minimo in array v[ind_min],...v[ind_max]
+    for(int i = ind_min+1; i<=ind_max; i++){
+        //Se incontro elemento piu`  piccolo del minimo
+        //attuale aggiorno minimo e posizione minimo
+        if (v[i]<min){
+            pos_min = i;
+            min = v[i];
+        }
+    }
+    return pos_min;
+}
+
+
+
+int pos_min(char v[], int ind_min, int ind_max){
+    
+    int pos_min = ind_min;
+    char min = v[ind_min];
+    //Determino minimo in array v[ind_min],...v[ind_max]
+    for(int i = ind_min+1; i<=ind_max; i++){
+        //Se incontro elemento piu`  piccolo del minimo
+        //attuale aggiorno minimo e posizione minimo
+        if (v[i]<min){
+            pos_min = i;
+            min = v[i];
+        }
+    }
+    return pos_min;
+}
+
+
+
+void selsort(float v[], int used){
+    int pmin;
+    
+    for(int i=0; i<used; i++){
+        pmin = pos_min(v,i,used-1);
+        scambia(v,i,pmin);
+    }
+}
+
+void scambia(float v[],int p1, int p2){
+    float appo;
+    appo = v[p1];
+    v[p1] = v[p2];
+    v[p2]=appo;
+}
+
+void scambia(char v[],int p1, int p2){
+    char appo;
+    appo = v[p1];
+    v[p1] = v[p2];
+    v[p2]=appo;
+}

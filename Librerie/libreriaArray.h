@@ -35,3 +35,20 @@ int eliminaSwap(float v[], int pos, int dim);
 //(used) dei dati, -1 se pos non e`  in range
 
 int eliminaShift(float v[], int pos, int dim);
+
+
+//Determina la posizione dell'elemento piu` piccolo nell'array
+//v[ind_min,...,ind_max]
+int pos_min(float v[], int ind_min, int ind_max);
+int pos_min(char v[], int ind_min, int ind_max);
+
+//Ordina l'array v contenente used elementi usando
+//algoritmo Selection Sort
+void selsort(float v[], int used);
+
+
+
+//Scambia gli elementi in posizione p1 e p2 dell'array v
+void scambia(float v[],int p1, int p2);
+void scambia(char v[],int p1, int p2);
+

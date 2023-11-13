@@ -1,3 +1,6 @@
 .DS_store
 
-.x
+*.x
+*.o
+.vscode/
+

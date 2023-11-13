@@ -3,6 +3,11 @@
         "eliminazione_da_array.C": "cpp",
         "libreria.C": "cpp",
         "prog.C": "cpp",
-        "solEs1.C": "cpp"
+        "solEs1.C": "cpp",
+        "libreriaArray.C": "cpp",
+        "solEs1 copy.C": "cpp",
+        "solEs1_usaLib.C": "cpp",
+        "solEs2.C": "cpp",
+        "ostream": "c"
     }
 }
