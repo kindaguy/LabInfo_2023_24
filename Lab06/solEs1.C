@@ -30,6 +30,7 @@ int main(){
         file_in >> vdati[i];
     
     file_in.close();
+    
     cout << endl << endl << " Prima ordinamento:" << endl;
     for(int i=0; i<10; i++)
         cout << endl << vdati[i] << endl;

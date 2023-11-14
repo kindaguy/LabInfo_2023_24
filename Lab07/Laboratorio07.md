@@ -17,7 +17,7 @@ Scrivere un programma che:
 
 1. Carichi i dati presenti sul file in un array di __float__. 
 2. Ordini l'array usando l'algoritmo __selectionSort__, ovvero quello che sposta prima in testa all'array l'elemento più piccolo, in seconda posizione il secondo elemento più piccolo ecc....
-3. Determini il minimo, il massimo, la mediana, la media e la deviazione standard dei dati. Il calcolo di queste statistiche deve essere effettuato da una funzione __void calcolaStats(float v[], int ndata, float *pmin, float *pmax, float *pmediana, float *pmediam, float *pstddev)__ che "restituisce" il valore delle statistiche richieste per _side-effect_.
+3. Determini il minimo, il massimo, la mediana, la media e la deviazione standard dei dati. Il calcolo di queste statistiche deve essere effettuato da una funzione __void calcolaStats(float v[], int ndata, float *pmin, float *pmax, float *pmediana, float *pmedia, float *pstddev)__ che "restituisce" il valore delle statistiche richieste per _side-effect_.
 
 I primi 3 e gli ultimi 3 valori dell'array ordinato, insieme a tutte le statistiche determinate al punto 3, devono essere stampati a video e REGISTRATI sul file __risultati.dat__.
 
@@ -49,9 +49,11 @@ che, contati i dati presenti sul file di nome __nomefile__, carichi gli __ndati_
 Scrivere un programma che produca un istogramma (artigianale eh...) facendo quanto segue:
 
 1. Chiedere  all'utente di definire un intervallo $[\text{min},\text{max}]$  con $\text{min} < \text{max}$ e un numero $\text{nbins}$ di intervalli in cui dividere $[\text{min},\text{max}]$. A questo punto avremo identificato gli intervalli $[x_0 = \text{min}, x_1 = \text{min}+\delta]$, $(x_1,x_2 = \text{min}+2 \cdot \delta ]$,$\ldots$, $(x_{\text{nbins}-1},  x_N = \text{min}+ \text{nbins} \cdot \delta]$, dove
-```math
-\delta  = \frac{\text{max} - \text{min}}{\text{nbins}}.
-```
+
+
+
+$
+\delta  = \frac{\text{max} - \text{min}}{\text{nbins}}.$
 
 
  Notate che tutti gli intervalli, tranne il primo, sono aperti a sinistra, e che formano una partizione di $[\text{min},\text{max}]$.

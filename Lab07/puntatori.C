@@ -35,7 +35,7 @@ int main(){
 
    *puntatore  = 7;
 
-   cout <<  "variabile: " << endl;
+   cout <<  endl << "variabile: " << endl;
    cout << endl <<  "\t contenuto:  " << setw(SIZE) << var;
    cout << endl <<  "\t indirizzo:  " << setw(SIZE) << &var;
    cout << endl << endl;
@@ -56,6 +56,13 @@ int main(){
    cout << "Un array statico non ha un contenuto: e` un indirizzo..." << endl << endl;
 
 
+   arrayInt[2]=4;
+   //puntatore = &arrayInt[2];
+   
+   puntatore = arrayInt+2;
+   cout << endl << "Sono l' array" << arrayInt << endl;
+   cout << endl <<  " Indirizzo in puntatore: " << puntatore <<endl;
+   cout << endl<< "eccomi: " << *puntatore << endl;
    return 0;
 
 }
