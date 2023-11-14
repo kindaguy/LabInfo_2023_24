@@ -48,7 +48,7 @@ che, contati i dati presenti sul file di nome __nomefile__, carichi gli __ndati_
 # Esercizio 5: "home made" Istogramma
 Scrivere un programma che produca un istogramma (artigianale eh...) facendo quanto segue:
 
-1. Chiedere  all'utente di definire un intervallo $[\text{min},\text{max}]$  con $\text{min} < \text{max}$ e un numero $\text{nbins}$ di intervalli in cui dividere $[\text{min},\text{max}]$. A questo punto avremo identificato gli intervalli $[x_0 = \text{min}, x_1 = \text{min}+\delta]$, $(x_1,x_2 = \text{min}+2 \cdot \delta ]$,$\ldots$, $(x_{\text{nbins}-1},  x_N = \text{min}+ \text{nbins} \cdot \delta]$, dove
+1. Chiedere  all'utente di definire un intervallo $(\text{min},\text{max}]$  con $\text{min} < \text{max}$ e un numero $\text{nbins}$ di intervalli in cui dividere $[\text{min},\text{max}]$. A questo punto avremo identificato gli intervalli $(x_0 = \text{min}, x_1 = \text{min}+\delta]$, $(x_1,x_2 = \text{min}+2 \cdot \delta ]$,$\ldots$, $(x_{\text{nbins}-1},  x_\text{nbins} = \text{min}+ \text{nbins} \cdot \delta]$, dove
 
 
 
@@ -56,14 +56,15 @@ $
 \delta  = \frac{\text{max} - \text{min}}{\text{nbins}}.$
 
 
- Notate che tutti gli intervalli, tranne il primo, sono aperti a sinistra, e che formano una partizione di $[\text{min},\text{max}]$.
+ Notate che tutti gli intervalli sono aperti a sinistra, e che formano una partizione di $(\text{min},\text{max}]$.
 
 2. Crei un vettore di $\text{nbins}$ interi, allocato dinamicamente e con componenti inizializzate a zero. Nel seguiro chiameremo questo array __contatori__.
 
-A questo punto siamo pronti a riempire l'istogramma. Supponiamo di avere una $n$-upla di dati, che qui per definitezza consideremo di tipo __float__, con elementi nell'intervallo aperto $(\text{min},\text{max})$. 
+A questo punto siamo pronti a riempire l'istogramma. Supponiamo di avere una $n$-upla di dati, che qui per definitezza consideremo di tipo __float__, con elementi nell'intervallo aperto a sinistra $(\text{min},\text{max}]$. 
 
 3. Per ogni dato, diciamo $y_i$, individuare l'intervallo dell'istogramma in cui il dato "cade", ovvero il valore $k: x_k < y_i \leq x_{k+1}$.
-ATTENZIONE: per costruzione il campione non può contenere  i valori $\text{min}$ nè $\text{max}$. 
+ATTENZIONE: per costruzione il campione non può contenere  il valore $\text{min}$. Se $y_\text{min}$ e` il minimo del campione la scelta dell'estremo inferiore $min = y_\text{min}-0.001$ garantisce la "buona definizione" dell'intervallo $(\text{min},\text{max}]$.
+
 SUGGERIMENTO: per determinare in quale intervallo cade il dato $y$ possiamo usare un contatore e un ciclo:
 
 ```c++
