@@ -1,6 +1,10 @@
-# Laboratorio 7: puntatori e allocazione dinamica della memoria
+# Laboratorio 8: conteggio e caricamento dati "eterogenei" da file. Formazione librerie
 
-# Esercizio 1
+# Esercizio 1: Crivello di Eratostene
+
+Il Crivello di Eratostene e` un semplice algoritmo per la determinazione di tutti i numeri primi in un intervallo assegnato $[2,N_\text{max}$.
+
+
 
 Scrivere una funzione __void scambia (int *p1, int *p2)__ che scambi il contenuto delle variabili "passate"  alla funzione. Scrivere anche una versione per __float__ (__void scambia(float *p1, float *p2)__) e modificale la funzione di ordinamento __selsort()__ usata nella soluzione dell'Esercizio 1, settimana 6, in modo tale che usi questa funzione di scambio invece di __void scambia(float v[], int pos1, int pos2)__.
 
