@@ -4,9 +4,9 @@
 
 Il Crivello di Eratostene è un semplice algoritmo per la determinazione di tutti i numeri primi in un intervallo assegnato $[2,N_\text{max}]$. L'idea del Crivello è quella di:
 
-1)  Preparare un vettore di $N_\text{max}+2$ valori di tipo __bool__, inizializzati a __true__.
+1)  Preparare un vettore di $N_\text{max}+1$ valori di tipo __bool__, inizializzati a __true__.
 
-2) Sia $p$ il primo valore $geq 2$ marcato __true__ (all'inizio sarà proprio il valore 2). Assegnare a tutti i multipli interi di $p$ ($2p,3p,\ldots$) nel range $[2*n,N_\text{max}]$ il valore __false__: questi numeri non sono certamente primi.
+2) Sia $p$ il primo valore $\geq 2$ marcato __true__ (all'inizio sarà proprio il valore 2). Assegnare a tutti i multipli interi di $p$ ($2p,3p,\ldots$) nel range $[2*n,N_\text{max}]$ il valore __false__: questi numeri non sono certamente primi.
 
 3) Determinare il più piccolo intero che sia ancora marcato __true__, e usarlo come nuovo valore di $p$ al punto 2. Proseguire fino a quando non ci sono più valori di $p$ utilizzabili.
 
