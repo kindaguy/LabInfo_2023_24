@@ -3,27 +3,25 @@
 
 //Costrutto di fencing: evita che l'header venga importato da un altro programma se
 //e` gia` stato in qualche modo importato....
-#ifndef LIB_MY_ARRAY_INT
-#define LIB_MY_ARRAY_INT
+#ifndef LIB_MY_ARRAY_SFERA
+#define LIB_MY_ARRAY_SFERA
 
 using namespace std;
 
-struct myArrayInt{
+struct sfera{
+   float diam;
+   char col;
+};
+
+struct myArraySfera{
 
    int size;
    int used;
-   int *raw;
+   sfera *raw;
 };
 
 
-//Carica un vettore di interi in una t-upla myArrayInt
-//che restituisce. 
-//Codice errore:
-//0: se è andato tutto bene
-//-1: se ci sono stati problemi con lo stream
-//-2: se ci sono stati problemi con l'allocazione.
 
-myArrayInt caricaInteriFile(char nomefile[], int &errcode);
 
 
 //Questa(e) funzione(i) legge(ono) un dato dallo stream (passato per riferimento o per indirizzo)
@@ -32,17 +30,17 @@ myArrayInt caricaInteriFile(char nomefile[], int &errcode);
 //true: lettura andata a buon fine.
 //false: altrimenti
 
-bool leggiDato(ifstream& file, int &rdato);
+bool leggiDato(ifstream& file, sfera &rdato);
 
 
-bool leggiDato(ifstream& file, int *pdato);
+bool leggiDato(ifstream& file, sfera *pdato);
 
 //Con queste funzioni posso definire una funzione di caricamento da file 
 //leggermente modificata, e "universale".
 //La funzione, questa volta, restituisce il codice di errore invece di esportarlo usando un riferimento.
 
-int caricaMyArrayFile(char nomefile[], myArrayInt& rMyArray);
-int caricaMyArrayFile(char nomefile[], myArrayInt *pMyArray);
+int caricaMyArrayFile(char nomefile[], myArraySfera& rMyArray);
+int caricaMyArrayFile(char nomefile[], myArraySfera *pMyArray);
 
 
 #endif

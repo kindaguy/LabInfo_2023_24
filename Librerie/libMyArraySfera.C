@@ -1,93 +1,15 @@
-#include "libMyArrayInt.h"
-
-//Carica un vettore di interi in una t-upla myArrayInt
-//che restituisce. 
-//Codice errore:
-//0: se è andato tutto bene
-//-1: se ci sono stati problemi con lo stream
-//-2: se ci sono stati problemi con l'allocazione.
-
-myArrayInt caricaInteriFile(char nomefile[], int &errcode){
-
-   //Valore da restituire
-   myArrayInt tupla;
-
-   //Contatore: INIZIALIZZARE A zero!
-   int conta = 0;
-   int appo;
-   //Gestore flusso da file
-   ifstream filein;
-
-   //Pignoleria/igiene
-   tupla.size = 0;
-   tupla.used = 0;
-   tupla.raw = NULL;
-
-   //Dichiarazione e inizializzazione finita
-
-   filein.open(nomefile);
-   
-   if(filein.fail()){
-      errcode = -1;
-      return tupla;
-   }
-
-   //NOTA: la funzione non gestisce l'errore: si limita a segnalarlo in uscita.
-
-   //Ciclo Spoletini
-   filein>> appo;
-   while(!filein.eof()){
-      conta++;
-      filein >> appo;
-   }
-
-   //Dati su file contati
-   
-   //Reset dello stream
-   filein.clear();
-   filein.seekg(0, ios::beg);
-   //oppure
-   //filein.close();
-   //filein.open(nomefile);
+#include "libMyArraySfera.h"
 
 
-   
-   tupla.raw = new int[conta];
-
-   if(tupla.raw == NULL){
-
-      errcode = -2;
-      return tupla;
-   }
-   //NOTA: anche qui non gestiamo l'eccezione, ci limitiamo a segnalarla...
-
-   tupla.size = conta;
-   
-   //N.B.: uso direttamente used per indicizzare l'array
-   //quindi: non ho bisogno di inizializzare (gia` fatto sopra)
-
-   for( ; tupla.used < conta; tupla.used++){
-
-      filein >> tupla.raw[tupla.used];
-   }
-
-   filein.close();
-
-   errcode = 0;
 
 
-   return tupla;
-
-}
-
-
-bool leggiDato(ifstream& file, int &rdato){
+bool leggiDato(ifstream& file, sfera &rdato){
    
    //Variabile di appoggio
-   int appo;
+   sfera appo;
 
    //Leggo da stream e registro in variabile di appoggio
-   file >> appo;
+   file >> appo.diam >> appo.col;
 
    //Controllo stato dello stream: se in fail() o lo stream è in eof, restituisco false
    //in questo modo il programma chiamante potrà accorgersi che il dato manca.
@@ -108,13 +30,13 @@ bool leggiDato(ifstream& file, int &rdato){
 //Praticamente idendica alla funzione definita sopra, tranne per il fatto che
 //genero il voluto side effect usando un puntatore.
 
-bool leggiDato(ifstream& file, int *pdato){
+bool leggiDato(ifstream& file, sfera *pdato){
    
    //Variabile di appoggio
-   int appo;
+   sfera appo;
 
    //Leggo da stream e registro in variabile di appoggio
-   file >> appo;
+   file >> appo.diam >> appo.col;
 
    //Controllo stato dello stream: se in fail() o lo stream è in eof, restituisco false
    //in questo modo il programma chiamante potrà accorgersi che il dato manca.
@@ -133,12 +55,12 @@ bool leggiDato(ifstream& file, int *pdato){
 
 
 
-int caricaMyArrayFile(char nomefile[], myArrayInt& rMyArray){
+int caricaMyArrayFile(char nomefile[], myArraySfera& rMyArray){
    
 
    //Contatore: INIZIALIZZARE A zero!
    int conta = 0;
-   int appo;
+   sfera appo;
    //Gestore flusso da file
    ifstream filein;
 
@@ -173,7 +95,7 @@ int caricaMyArrayFile(char nomefile[], myArrayInt& rMyArray){
 
 
    
-   rMyArray.raw = new int[conta];
+   rMyArray.raw = new sfera[conta];
 
    if(rMyArray.raw == NULL){
 
@@ -202,11 +124,11 @@ int caricaMyArrayFile(char nomefile[], myArrayInt& rMyArray){
 
 
 
-int caricaMyArrayFile(char nomefile[], myArrayInt *pMyArray){
+int caricaMyArrayFile(char nomefile[], myArraySfera *pMyArray){
 
   //Contatore: INIZIALIZZARE A zero!
    int conta = 0;
-   int appo;
+   sfera appo;
    //Gestore flusso da file
    ifstream filein;
 
@@ -242,7 +164,7 @@ int caricaMyArrayFile(char nomefile[], myArrayInt *pMyArray){
 
 
    
-   pMyArray->raw = new int[conta];
+   pMyArray->raw = new sfera[conta];
 
    if(pMyArray->raw == NULL){
 
