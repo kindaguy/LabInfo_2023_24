@@ -1,5 +1,11 @@
 #include <fstream>
 #include <iostream>
+//NOTA: Il meccanismo di fencing esemplificato sotto viene
+//implementato naturalmente nelle librerie standard: non abbiamo 
+//mai riscontrato problemi quando includevamo, ad esempio, <iostream> nel
+//programma e in una o piu` librerie.
+
+#include "sfera.h"
 
 //Costrutto di fencing: evita che l'header venga importato da un altro programma se
 //e` gia` stato in qualche modo importato....
@@ -8,13 +14,8 @@
 
 using namespace std;
 
-struct sfera{
-   float diam;
-   char col;
-};
 
 struct myArraySfera{
-
    int size;
    int used;
    sfera *raw;
@@ -24,16 +25,8 @@ struct myArraySfera{
 
 
 
-//Questa(e) funzione(i) legge(ono) un dato dallo stream (passato per riferimento o per indirizzo)
-//e lo registra in una variabile esterna (passata per riferimento/indirizzo)
-//Restituisce:
-//true: lettura andata a buon fine.
-//false: altrimenti
-
-bool leggiDato(ifstream& file, sfera &rdato);
 
 
-bool leggiDato(ifstream& file, sfera *pdato);
 
 //Con queste funzioni posso definire una funzione di caricamento da file 
 //leggermente modificata, e "universale".
@@ -41,6 +34,17 @@ bool leggiDato(ifstream& file, sfera *pdato);
 
 int caricaMyArrayFile(char nomefile[], myArraySfera& rMyArray);
 int caricaMyArrayFile(char nomefile[], myArraySfera *pMyArray);
+
+//Queste funzioni stampano
+//a video
+void stampa(myArraySfera  vsfera);
+//su file
+void stampa(myArraySfera  vsfera, ofstream& fileout);
+
+//NOTA: il nome della funzione e` sovraccaricato (overload): e` il numero/tipo di parametri
+//che determina quale funzione verra` chiamata.
+
+
 
 
 #endif

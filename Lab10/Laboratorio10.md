@@ -64,7 +64,7 @@ Fornire una stima Monte Carlo dell'integrale, usando, con attenzione, una delle 
 
  $y(t) = x(t)+ \epsilon$.
 
- Fissati i valori __x0 = 2, v = 0.3, u = 0.2__, usare la funzione __rileva__ per generare 100 coppie $(t_i,y_i = y(t_i))$ con $t_i = 0.2 * i, i=0,1,\ldots,99$. Registrare le coppie generate su un file dal nome __rilevazioni.dat__. Ogni riga del file dovrà contenere una coppia $t_i$ $y_i$. 
+ Fissati i valori __x0 = 2, v = 0.3__, usare la funzione __rileva__ per generare 100 coppie $(t_i,y_i = y(t_i))$ con $t_i = 0.2 * i, i=0,1,\ldots,99$. Registrare le coppie generate su un file dal nome __rilevazioni.dat__. Ogni riga del file dovrà contenere una coppia $t_i$ $y_i$. 
  
  IMPAGINAZIONE: ciascun valore di una coppia deve essere registrata sul file in un campo di ampiezza 12. Usare il modificatore __setw(...)__ della libreria __iomanip__.
 
@@ -95,12 +95,16 @@ Fornire una stima Monte Carlo dell'integrale, usando, con attenzione, una delle 
 
  A tal fine, potremmo definire la funzione
 
- __T leggiDato(ifstream& reflusso)__
+ __bool leggiDato(ifstream& reflusso, T& rdato)__
 
  oppure
 
- __T leggiDato(ifstream *puflusso)__
+ __bool leggiDato(ifstream *puflusso, T * pdato)__
 
- dove __T__, come al solito, è un segnaposto per un tipo di dato qualsiasi (anche t-upla). A questa funzione deleghiamo la lettura di un dato (eventualmente composito) da file... Le modifiche allo stream, tra cui l'avanzamento della "testina di lettura" persisteranno anche dopo la chiamata della funzione, per entrambe le segnature della funzione: notate che passiamo un reference o un puntatore.
+ dove __T__, come al solito, è un segnaposto per un tipo di dato qualsiasi (anche t-upla). A questa funzione deleghiamo la lettura di un dato (eventualmente composito) da file... La funzione deve restituire __true__ se il dato c'è, __false__ altrimenti (ovvero se lo stream è in stato di End-Of-File (EOF) o di FAIL.
+ 
+ __NOTA:__ Le modifiche allo stream, tra cui l'avanzamento della "testina di lettura" persisteranno anche dopo la chiamata della funzione, per entrambe le segnature della funzione: notate che passiamo un reference o un puntatore.
 
  A questo punto la funzione di caricamento da file dovrà  essere modificata solo nella parte dove dichiariamo il tipo del dato....
+
+ ...vediamo insieme una possibile soluzione dell'esercizio 6 del Laboratorio 9.

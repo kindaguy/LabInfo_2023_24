@@ -1,60 +1,5 @@
 #include "libMyArraySfera.h"
 
-
-
-
-bool leggiDato(ifstream& file, sfera &rdato){
-   
-   //Variabile di appoggio
-   sfera appo;
-
-   //Leggo da stream e registro in variabile di appoggio
-   file >> appo.diam >> appo.col;
-
-   //Controllo stato dello stream: se in fail() o lo stream è in eof, restituisco false
-   //in questo modo il programma chiamante potrà accorgersi che il dato manca.
-   if(file.eof() || file.fail()){
-      return false;
-   }
-   else{
-      //Il dato effettivamente c'e`. Lo salvo nella variabile "che esporta il valore dalla funzione"
-      rdato = appo;
-      //Tutto a posto: il dato c'e`: restutuisco true
-      return true;
-   }
-
-
-} 
-
-
-//Praticamente idendica alla funzione definita sopra, tranne per il fatto che
-//genero il voluto side effect usando un puntatore.
-
-bool leggiDato(ifstream& file, sfera *pdato){
-   
-   //Variabile di appoggio
-   sfera appo;
-
-   //Leggo da stream e registro in variabile di appoggio
-   file >> appo.diam >> appo.col;
-
-   //Controllo stato dello stream: se in fail() o lo stream è in eof, restituisco false
-   //in questo modo il programma chiamante potrà accorgersi che il dato manca.
-   if(file.eof() || file.fail()){
-      return false;
-   }
-   else{
-      //Il dato effettivamente c'e`. Lo salvo nella variabile "che esporta il valore dalla funzione"
-      *pdato = appo;
-      //Tutto a posto: il dato c'e`: restutuisco true
-      return true;
-   }
-
-
-}
-
-
-
 int caricaMyArrayFile(char nomefile[], myArraySfera& rMyArray){
    
 
@@ -191,6 +136,27 @@ int caricaMyArrayFile(char nomefile[], myArraySfera *pMyArray){
 
 }
 
+
+
+//Queste funzioni stampano
+//a video
+void stampa(myArraySfera  vsfera){
+   cout << endl << "size: " << vsfera.size << endl;
+   cout << endl << "used: " << vsfera.used << endl;
+
+   for(int i=0; i<vsfera.used;i++)
+      stampa(vsfera.raw[i]);
+}
+//su file
+void stampa(myArraySfera  vsfera, ofstream& fileout){
+   fileout << endl << "size: " << vsfera.size << endl;
+   fileout << endl << "used: " << vsfera.used << endl;
+
+
+   for(int i=0; i<vsfera.used; i++)
+      stampa(vsfera.raw[i],fileout);
+
+}
 
 
 
