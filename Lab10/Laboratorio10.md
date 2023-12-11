@@ -54,15 +54,15 @@ Fornire una stima Monte Carlo dell'integrale, usando, con attenzione, una delle 
 
  Scrivere una funzione
 
- __double rileva(double time, double x0,double v,double u)__
+ __double rileva(double time, double x0,double v,double mu, double sig)__
 
  che, preso in ingresso un tempo __time__ calcoli la posizione  di un punto materiale che si muova secondo la legge
 
  $x(t) = x0 + v t$
 
- a cui somma un valore casuale $\epsilon$  estratto a caso da una popolazione normale di media $\mu=0$ e deviazione standard $\sigma = 0.4$. Il valore generato sarà pertanto uguale a 
+ a cui somma un valore casuale $\epsilon$  estratto a caso da una popolazione normale di media $\mu =$ __mu__ e deviazione standard $\sigma$ = __sig__. Il valore generato sarà pertanto uguale a 
 
- $y(t) = x(t)+ \epsilon$.
+ $y(t) = x(t)+ \epsilon, \ \epsilon \sim N(\mu,\sigma)$
 
  Fissati i valori __x0 = 2, v = 0.3__, usare la funzione __rileva__ per generare 100 coppie $(t_i,y_i = y(t_i))$ con $t_i = 0.2 * i, i=0,1,\ldots,99$. Registrare le coppie generate su un file dal nome __rilevazioni.dat__. Ogni riga del file dovrà contenere una coppia $t_i$ $y_i$. 
  
