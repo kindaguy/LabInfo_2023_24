@@ -289,3 +289,60 @@ void stampaMyArray(myArrayInt& rMyArray){
 
 
 
+int resizeMyArray(myArrayInt * myA, int newDim){
+
+   int *appo;
+   //Alloco dinamicamente il nuovo vettore
+   appo = new int[newDim];
+   if(appo == NULL){
+      cout<< endl << "ahia: qualcosa e` andato storto" << endl;
+      return -1;
+   }
+   //Se va tutto bene
+   //Distinguiamo 2 casi
+
+   //myA->size === (*myA).size
+   //*myA.size
+   if(newDim > myA->size){
+      // for(int i=0; i<myA->size; i++){
+      //    appo[i] = myA->raw[i];
+      // }
+      memcpy(appo, myA->raw, myA->size * sizeof(int));
+      //Aggiorno size
+      myA->size = newDim;
+      //used rimane invariato
+      //Rimuovo da heap vecchio array
+      delete [] myA->raw;
+      //Assegno a raw l'indirizzo del nuovo array
+      myA->raw = appo;
+      return 0;
+
+   }
+
+   else if(newDim < myA->size){
+
+      // for(int i=0; i<newDim; i++){
+      //    appo[i] = myA->raw[i];
+      // }
+      memcpy(appo, myA->raw, newDim * sizeof(int));
+
+      //Aggiorno size
+      myA->size = newDim;
+      //used...
+
+      if(myA->used > newDim)
+         myA->used = newDim;
+
+      //Rimuovo da heap vecchio array
+      delete [] myA->raw;
+      //Assegno a raw l'indirizzo del nuovo array
+      myA->raw = appo;
+      return 0;
+
+   }
+
+   //else: non fare nulla: newDim ==  myArray->size: non va ridimensionato
+   return 0;
+}
+
+

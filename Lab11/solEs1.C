@@ -95,7 +95,4 @@ int resizeMyArray(myArrayInt * myA, int newDim){
 
    //else: non fare nulla: newDim ==  myArray->size: non va ridimensionato
    return 0;
-
-
-
 }

@@ -50,5 +50,9 @@ void stampaMyArray(myArrayInt& rMyArray,int from, int to);
 
 void stampaMyArray(myArrayInt& rMyArray);
 
+//Allarga/restringe l'array. Nuova dimensione pari a newDim.
+//Restituisce 0 se tutto ok, -1 altrimenti.
+
+int resizeMyArray(myArrayInt * myA, int newDim);
 
 #endif
