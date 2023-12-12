@@ -269,7 +269,23 @@ int caricaMyArrayFile(char nomefile[], myArrayInt *pMyArray){
 
 }
 
+void stampaMyArray(myArrayInt& rMyArray,int from, int to){
 
+   for(int i=from; i<=to; i++){
+      cout << endl <<rMyArray.raw[i] ;
+   }
+   cout << endl;
+}
+
+void stampaMyArray(myArrayInt& rMyArray){
+
+   for(int i=0; i<rMyArray.used; i++){
+      cout << endl <<rMyArray.raw[i] ;
+   }
+   cout << endl;
+
+
+}
 
 
 

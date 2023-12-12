@@ -42,7 +42,13 @@ bool leggiDato(ifstream& file, int *pdato);
 //La funzione, questa volta, restituisce il codice di errore invece di esportarlo usando un riferimento.
 
 int caricaMyArrayFile(char nomefile[], myArrayInt& rMyArray);
+
+
 int caricaMyArrayFile(char nomefile[], myArrayInt *pMyArray);
+
+void stampaMyArray(myArrayInt& rMyArray,int from, int to);
+
+void stampaMyArray(myArrayInt& rMyArray);
 
 
 #endif
