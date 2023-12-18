@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 int main(){
 
    myArrayInt arr;
@@ -29,7 +28,7 @@ int main(){
    cout << endl << "indirizzo dopo: " << arr.raw << endl;
 
 
-
+ cout << endl << "Ciao mondo" << endl;
    
 
 

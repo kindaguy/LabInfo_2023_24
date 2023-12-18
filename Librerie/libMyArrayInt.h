@@ -55,4 +55,6 @@ void stampaMyArray(myArrayInt& rMyArray);
 
 int resizeMyArray(myArrayInt * myA, int newDim);
 
+int caricaMyArrayFileResize(char nomefile[], myArrayInt& rMyArray);
+
 #endif

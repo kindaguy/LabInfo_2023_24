@@ -1,33 +1,13 @@
-#Automatizza processo di compilazione
-#formato da "entry point" di uno di questi tipi:
+solEs1.o: solEs1.C
+	g++ -c solEs1.C
 
-#-target : file.o: 	l'entry genera il target file.o che ha le dipendenze elencate dopo i ":"
-#							usando il comando nella riga successiva (attenzione che va indentata (tab))	
+libMyArrayInt.o: ../Librerie/libMyArrayInt.C ../Librerie/libMyArrayInt.h
+	g++ -c libMyArrayInt.C
 
-#phony: nome: 				l'entry fa qualcosa che dipende dalle dipendenze elencate dopo ":"
-#								l'azione da fare e` indicata sotto
+solEs1.x: solEs1.o libMyArrayInt.o 
+	g++ solEs1.o libMyArrayInt.o -o solEs1.x
 
-#Se una delle dipendenze e` stata aggiornata dopo il target, MAKE cerca di usare le entry
-#corrispondenti ai target prima di eseguire l'azione. 
+compila: solEs1.x
 
-libArray.o: libArray.h libArray.C
-	g++ -c libArray.C
-
-libstatTama.o: libstatTama.C libstatTama.h
-	g++ -c libstatTama.C
-
-acaso.o: acaso.h acaso.C
-	g++ -c acaso.C
-
-provaLibs.o: provaLibs.C 
-	g++ -c provaLibs.C 
-
-provaLibs.x: provaLibs.o libArray.o libstatTama.o acaso.o
-	g++ provaLibs.o libArray.o libstatTama.o acaso.o -o provaLibs.x
-
-#Esempio entry PHONY
-
-compila: provaLibs.x
-
-esegui: compila 
-	./provaLibs.x
+esegui: compila
+	./solEs1.x

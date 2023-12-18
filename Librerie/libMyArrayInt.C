@@ -345,4 +345,55 @@ int resizeMyArray(myArrayInt * myA, int newDim){
    return 0;
 }
 
+int caricaMyArrayFileResize(char nomefile[], myArrayInt& rMyArray){
 
+   //Contatore: INIZIALIZZARE A zero!
+   int conta = 0;
+   int appo;
+   //Gestore flusso da file
+   ifstream filein;
+
+   int dim0 = 20;
+   int incrDim = 10;
+   int err;
+
+   //Variabile per controllare status stream
+   bool status = true;
+
+   //Inizializzo array di dim0 elementi
+   rMyArray.size = dim0;
+   rMyArray.used = 0;
+   rMyArray.raw = new int[dim0];
+
+   if(rMyArray.raw == NULL){
+
+      return -2;
+
+   }
+
+   filein.open(nomefile);
+   
+   if(filein.fail()){
+      return -1;
+   }
+   //NOTA: la funzione non gestisce l'errore: si limita a segnalarlo in uscita.
+
+   status = leggiDato(filein,appo);
+   while(status == true){
+      //Se non c'e` piu` posto
+      if(rMyArray.used == rMyArray.size){
+         err = resizeMyArray(&rMyArray,rMyArray.size+incrDim);
+      }
+
+      rMyArray.raw[rMyArray.used] = appo;
+      rMyArray.used++;
+      status = leggiDato(filein,appo);
+   }
+
+   filein.close();
+
+   //Dati caricati correttamente nella variabile esterna
+   return 0;
+
+
+}
