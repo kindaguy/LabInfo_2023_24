@@ -7,8 +7,13 @@ libMyArraySfera.o: libMyArraySfera.C libMyArraySfera.h
 sfera.o: sfera.C sfera.h
 	g++ -c sfera.C
 
-prog.x: sfera.o libMyArraySfera.o prog.o 
-	g++ sfera.o libMyArraySfera.o prog.o -o prog.x
+
+libSorting.o: libSorting.C libSorting.h
+	g++ -c libSorting.C
+
+prog.x: sfera.o libMyArraySfera.o prog.o libSorting.o 
+	g++ sfera.o libMyArraySfera.o  libSorting.o prog.o -o prog.x
+
 
 compila: prog.x
 

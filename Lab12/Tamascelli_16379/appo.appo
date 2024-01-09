@@ -1,0 +1,1465 @@
+./prog.x
+
+ Numero di sfere:120
+
+Conteggio per colore:
+blu:      50
+gialle:   40
+rosse:    30
+
+Da tolleranze.dat:
+
+    colore  nominale     tolleranza
+         b        50           0.05
+         g        70           0.07
+         r        90           0.09
+
+size: 120
+
+used: 120
+
+  diametro:        49.98
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0200005
+
+  diametro:        89.94
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0599976
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        90.12
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.120003
+
+  diametro:        49.93
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0699997
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        70.07
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0699997
+
+  diametro:        89.92
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0800018
+
+  diametro:        90.15
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.150002
+
+  diametro:        90.13
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.129997
+
+  diametro:        49.93
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0699997
+
+  diametro:        70.02
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0199966
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        49.91
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0900002
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        69.93
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0699997
+
+  diametro:        50.01
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   0.00999832
+
+  diametro:        89.91
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0899963
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        70.02
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0199966
+
+  diametro:        89.93
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0699997
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        49.97
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0299988
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        49.97
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0299988
+
+  diametro:        69.89
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    -0.110001
+
+  diametro:        69.98
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0199966
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        89.91
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0899963
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        90.01
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0100021
+
+  diametro:        49.94
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0600014
+
+  diametro:        49.86
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.139999
+
+  diametro:        70.05
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0500031
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        50.02
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0200005
+
+  diametro:           90
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:            0
+
+  diametro:        49.94
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0600014
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:        49.97
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0299988
+
+  diametro:        89.86
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    -0.139999
+
+  diametro:        50.06
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0600014
+
+  diametro:         89.9
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0999985
+
+  diametro:        89.93
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0699997
+
+  diametro:        70.04
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0400009
+
+  diametro:        70.06
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0599976
+
+  diametro:        70.06
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0599976
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        50.09
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0900002
+
+  diametro:        50.08
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0800018
+
+  diametro:        90.02
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0199966
+
+  diametro:         50.1
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0999985
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        70.04
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0400009
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:        49.89
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.110001
+
+  diametro:        89.95
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0500031
+
+  diametro:        70.04
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0400009
+
+  diametro:        89.94
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0599976
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        90.09
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0899963
+
+  diametro:           50
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:            0
+
+  diametro:        50.03
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0299988
+
+  diametro:        70.01
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0100021
+
+  diametro:        69.91
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0899963
+
+  diametro:        50.08
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0800018
+
+  diametro:        90.15
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.150002
+
+  diametro:        89.94
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0599976
+
+  diametro:        49.92
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0800018
+
+  diametro:        50.07
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0699997
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        90.11
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.110001
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        90.03
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0299988
+
+  diametro:        90.09
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0899963
+
+  diametro:        50.07
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0699997
+
+  diametro:        70.07
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0699997
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:           70
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:            0
+
+  diametro:        70.12
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:     0.120003
+
+  diametro:        89.93
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0699997
+
+  diametro:        50.03
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0299988
+
+  diametro:        50.17
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:     0.169998
+
+  diametro:        69.96
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0400009
+
+  diametro:        49.88
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.119999
+
+  diametro:           50
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:            0
+
+  diametro:        90.05
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0500031
+
+  diametro:        89.87
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    -0.129997
+
+  diametro:         70.1
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0999985
+
+  diametro:        69.93
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0699997
+
+  diametro:        90.04
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0400009
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:           50
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:            0
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        49.89
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.110001
+
+  diametro:        69.94
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0599976
+
+  diametro:         49.9
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0999985
+
+  diametro:        90.03
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0299988
+
+  diametro:        49.94
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0600014
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        50.11
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:     0.110001
+
+  diametro:        69.92
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0800018
+
+  diametro:        70.11
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:     0.110001
+
+  diametro:        90.06
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0599976
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        69.95
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0500031
+
+  diametro:        70.06
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0599976
+
+  diametro:        50.06
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0600014
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        70.02
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0199966
+
+  diametro:        69.96
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0400009
+
+  diametro:         50.1
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0999985
+
+  diametro:        50.06
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0600014
+
+  diametro:        90.04
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0400009
+
+  diametro:        90.01
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0100021
+
+Dopo ordinamento....
+
+size: 120
+
+used: 120
+
+  diametro:        49.98
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0200005
+
+  diametro:        49.93
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0699997
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        49.93
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0699997
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        49.91
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0900002
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        50.01
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   0.00999832
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        49.97
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0299988
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        49.97
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0299988
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        49.94
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0600014
+
+  diametro:        49.86
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.139999
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        50.02
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0200005
+
+  diametro:        49.94
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0600014
+
+  diametro:        49.97
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0299988
+
+  diametro:        50.06
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0600014
+
+  diametro:        50.09
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0900002
+
+  diametro:        50.08
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0800018
+
+  diametro:         50.1
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0999985
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        49.89
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.110001
+
+  diametro:           50
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:            0
+
+  diametro:        50.03
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0299988
+
+  diametro:        50.08
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0800018
+
+  diametro:        49.92
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0800018
+
+  diametro:        50.07
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0699997
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        50.04
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0400009
+
+  diametro:        50.07
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0699997
+
+  diametro:        50.03
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0299988
+
+  diametro:        50.17
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:     0.169998
+
+  diametro:        49.88
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.119999
+
+  diametro:           50
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:            0
+
+  diametro:        49.99
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:  -0.00999832
+
+  diametro:           50
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:            0
+
+  diametro:        49.89
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    -0.110001
+
+  diametro:         49.9
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0999985
+
+  diametro:        49.94
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0600014
+
+  diametro:        49.96
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:   -0.0400009
+
+  diametro:        50.11
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:     0.110001
+
+  diametro:        50.06
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0600014
+
+  diametro:         50.1
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0999985
+
+  diametro:        50.06
+    colore:            b
+  nominale:           50
+tolleranza:         0.05
+discrepanza:    0.0600014
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        70.07
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0699997
+
+  diametro:        70.02
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0199966
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        69.93
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0699997
+
+  diametro:        70.02
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0199966
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        69.89
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    -0.110001
+
+  diametro:        69.98
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0199966
+
+  diametro:        70.05
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0500031
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:        70.04
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0400009
+
+  diametro:        70.06
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0599976
+
+  diametro:        70.06
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0599976
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        70.04
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0400009
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:        70.04
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0400009
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        70.01
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0100021
+
+  diametro:        69.91
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0899963
+
+  diametro:        70.07
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0699997
+
+  diametro:        69.97
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0299988
+
+  diametro:           70
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:            0
+
+  diametro:        70.12
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:     0.120003
+
+  diametro:        69.96
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0400009
+
+  diametro:         70.1
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0999985
+
+  diametro:        69.93
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0699997
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        69.94
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0599976
+
+  diametro:        69.92
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0800018
+
+  diametro:        70.11
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:     0.110001
+
+  diametro:        70.03
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0299988
+
+  diametro:        69.95
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0500031
+
+  diametro:        70.06
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0599976
+
+  diametro:        69.99
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0100021
+
+  diametro:        70.02
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:    0.0199966
+
+  diametro:        69.96
+    colore:            g
+  nominale:           70
+tolleranza:         0.07
+discrepanza:   -0.0400009
+
+  diametro:        89.94
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0599976
+
+  diametro:        90.12
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.120003
+
+  diametro:        89.92
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0800018
+
+  diametro:        90.15
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.150002
+
+  diametro:        90.13
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.129997
+
+  diametro:        89.91
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0899963
+
+  diametro:        89.93
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0699997
+
+  diametro:        89.91
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0899963
+
+  diametro:        90.01
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0100021
+
+  diametro:           90
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:            0
+
+  diametro:        89.86
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    -0.139999
+
+  diametro:         89.9
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0999985
+
+  diametro:        89.93
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0699997
+
+  diametro:        90.02
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0199966
+
+  diametro:        89.95
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0500031
+
+  diametro:        89.94
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0599976
+
+  diametro:        90.09
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0899963
+
+  diametro:        90.15
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.150002
+
+  diametro:        89.94
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0599976
+
+  diametro:        90.11
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:     0.110001
+
+  diametro:        90.03
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0299988
+
+  diametro:        90.09
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0899963
+
+  diametro:        89.93
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:   -0.0699997
+
+  diametro:        90.05
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0500031
+
+  diametro:        89.87
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    -0.129997
+
+  diametro:        90.04
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0400009
+
+  diametro:        90.03
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0299988
+
+  diametro:        90.06
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0599976
+
+  diametro:        90.04
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0400009
+
+  diametro:        90.01
+    colore:            r
+  nominale:           90
+tolleranza:         0.09
+discrepanza:    0.0100021

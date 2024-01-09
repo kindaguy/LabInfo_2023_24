@@ -60,13 +60,19 @@ bool leggiDato(ifstream& file, sfera *pdato){
 void stampa(sfera s){
 
    cout << endl << setw(12)<< "diametro: " << setw(12) << s.diam;
-   cout << endl << setw(12) << "colore: " << setw(12) << s.col << endl;
-
+   cout << endl << setw(12) << "colore: " << setw(12) << s.col;
+   cout << endl << setw(12)<< "nominale: " << setw(12) << s.exact;
+   cout << endl << setw(12) << "tolleranza: " << setw(12) << s.atoll;
+   cout << endl << setw(12) << "discrepanza: " << setw(12) << s.discr;
+   cout << endl;
 }
 
 void stampa(sfera s, ofstream &fileout){
 
    fileout << endl << setw(12)<< "diametro: " << setw(12) << s.diam;
-   fileout << endl << setw(12) << "colore: " << setw(12) << s.col << endl;
-   
+   fileout << endl << setw(12) << "colore: " << setw(12) << s.col;
+   fileout << endl << setw(12)<< "nominale: " << setw(12) << s.exact;
+   fileout << endl << setw(12) << "tolleranza: " << setw(12) << s.atoll;
+   fileout << endl << setw(12) << "discrepanza: " << setw(12) << s.discr;
+   fileout << endl;
 }
