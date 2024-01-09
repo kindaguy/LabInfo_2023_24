@@ -1,76 +1,64 @@
-# Laboratorio 12: Svolgimento tema d'esame
+# Laboratorio 11: Ordinamento e dintorni
 
-Risolviamo insieme il tema d'esame della prova di laboratorio del 29 gennaio 2019. Nel costruire la soluzione, metteremo in evidenza quelle che sono le necessità tipiche di "molti" dei temi d'esame proposti e prepareremo dei template di soluzione, che possano essere "riciclati", con opportune modifiche, in altri esercizi/temi.
+Discutiamo l'implementazione del MergeSort per l'ordinamento di un vettore di dati semplici (__int__). Applicheremo quindi algoritmi di ordinamento a vettori di t-uple: questo ci consentirà di toccare con mano l'ordinamento per chiave, e verificare che una volta implementato un algoritmo di ordinamento per un tipo di dato, lo stesso può essere adattato ad altri tipi di dato con modifiche minime.
 
-Nella cartella troverete sia il testo della prova che i file di dati necessari.
 
 ## Esercizio 1
-Predisponete una cartella di nome __Cognome_matricola__ (ad esempio, __Tamascelli_16379__). Copiare i file __sfere.dat__ e __tolleranze.dat__, presenti nella cartella __Lab12__ in questa cartella. Aprite la cartella in VS Code, in modo da visualizzare il suo contenuto.
+
+Discutiamo insieme un'implementazione di _MergeSort_ (ricorsivo) per l'ordinamento di un vettore di interi. La funzione ordinerà il vettore in ordine non decrescente ovvero permutando gli elementi dell'array in modo tale che __v[i] <= v[j]__ per __i < j__.
+
+__Proposta__: definite una funzione __MergeSortInv__ che ordini un array di interi in ordine non crescente, ovvero permutando gli elementi dell'array in modo tale che __v[i] >= v[j]__ per __i < j__.
+Riflessione: dove va modificato il codice del MergeSort originale?
+
+## Macro-esercizio 
 
 ## Esercizio 2
-Copiate la cartella creata nell'Esercizio 1 nella cartella __/home/comune/20240109_ProvaProva__  attraverso il comando __cp__. Per chi fosse "arrugginito" sui comandi basilari di shell, ricordiamo che, per effettuare tale copia, serve:
-- Collocare la shell nella cartella che contiene la cartella da copiare.
-- Accertarsi che la cartella da copiare sia presente visualizzando il contenuto della cartella corrente tramite il comando __ls__.
-- Effettuare la copia della cartella
+Il file __sfere.dat__ contiene la descrizione di insieme di sfere. Per ciascuna sfera, il file riporta il diametro (in mm) e il colore, indicato da un carattere (’b’ per blu, ’g’ per giallo, ’r’ per rosso). Il file contiene quindi un numero __non precisato__ di coppie (diametro, colore).
 
-__cp -r Cognome_Matricola /home/comune/20240109_ProvaProva__
+Il file __sfera.h__ contiene invece la definizione della struttura (t-upla) __sfera__. Notate che la t-upla __sfera__ lì definita è diversa da quella usata nel Laboratorio 9.
 
-Ovviamente dovete sostiuire a __Cognome_Matricola__ il nome della cartella che avete creato nell'Esercizio 1.
+Caricare le informazioni sulle sfere contenute in __sfere.dat__ in un vettore di __sfera__ allocato dinamicamente. Stampare a video la descrizione delle prime 3 e delle ultime 3 sfere caricate. Attenzione: alcuni campi delle t-uple rimangono non inizializzati. Poco male, le useremo più avanti.
 
+Attenzione: il file __sfera.h__ può essere incluso in tutti i file che usano la struttura sfera. Inoltre, in 
 
-A questo punto verificare che la cartella sia stata correttamente copiata ovvero:
-- portatevi nella cartella di destinazione
+- __Librerie/sfera.h__
+- __Librerie/sfera.C__ 
+- __Librerie/libMyArraySfera.h__
+- __Librerie/libMyArraySfera.C__
+troverete delle funzioni per la lettura e la stampa delle sfere che potreste riutilizzare, opportunamente modificate, per questo esercizio.
 
-__cd /home/comune/20240109_ProvaProva__
+## Esercizio 3
+Ordinare il vettore delle sfere in ordine di diametro effettivo non decrescente. Stampare a video la descrizione delle prime e delle ultime 3 sfere nel vettore ordinato.
 
-- Lanciate il comando __ls__ e sinceratevi che la vostra cartella sia presente in elenco.
+Usare uno degli algoritmi di ordinamento che avete a disposizione (selection sort implementato da voi, selection sort/mergesort implementato da me e disponibile nella cartella). Meditate: In quale punto vanno cambiati i codici? Ricordate: vale l'assegnamento tra due t-uple dello stesso tipo.
 
-ATTENZIONE: essere in grado di copiare una cartella o file tramite comandi di shell è un'abilità necessaria, e non sufficiente, al superamento della prova d'esame. Considerate che durante l'esame non sarà fornito alcun aiuto per il completamento di questa, elementare, operazione.
+## Esecizio 4
 
-# Esercizio 3
+Il file __tolleranze.dat__ contiene delle terne che indicano il colore (con lo stesso carattere ’b’, ’g’ o ’r’ usato nel file sfere.dat), il diametro nominale e la tolleranza (limite superiore del valore assoluto dello scarto tra il diametro reale di una sfera e il suo diametro nominale). Completare i campi delle sfere caricate usando i dati contenuti nel file __tolleranze.dat__. Per intenderci: nel campo __exact__ inserire il valore del diametro nominale delle sfere di colore corrispondente, nel campo __atoll__ la tolleranza e nel campo __discr__ il la differenza (con segno) tra il diametro reale (__diam__) e il diametro nominale (__exact__).
 
-Da qui in avanti ci riferiremo alla cartella __Cognome_matricola__ come alla _cartella di lavoro_.
+Questo esercizio richiede di ragionare un attimo.
 
+## Esercizio 5
 
-Il testo richiede di usare una t-upla (__struct__) __sfera__. Create, nella cartella di lavoro, un file __sfera.h__ dove:
+Eliminare dal vettore delle sfere tutte le sfere aventi diametro reale distante (in valore assoluto __fabs()__) dal diametro nominale più della tolleranza. Si tratta di "riciclare"  il codice per la scrematura già discusso qualche lab fa. Stampare a video:
+1. Il numero delle sfere eliminate.
+2. La descrizione delle sfere elimuinate.
 
-- definite la t-upla __sfera__ come prescritto nel testo d'esame.
-- dichiarate le  funzioni basilari per la lettura (da stream) di una singola sfera e per la stampa (a video e su file) della descrizione di una sfera.
+## Note
 
-Create, sempre nella cartella di lavoro, un file __sfera.C__ dove implementate le funzioni di lettura/scrittura di una sfera dichiarate nel file __sfera.h__.
+1. Nell'economia degli esercizi proposti, potrebbe essere conveniente scrivere una funzione per la stampa (ben formattata) delle sfere.
 
-Verificate il funzionamento delle funzioni. A questo scopo dovrete scrivere un programma (con __main__) che richiami le funzioni. In questa fase è opportuno cominciare a definire un __makefile__ che vi consenta di compilare ed eseguire il vostro programma in modo "agile".
+2. Si tratta ovviamente di un macro-esercizio, che si concretizzerà in un solo __main__ che farà diverse cose. Incapsulare ciascun esercizio in una funzione/procedura, che eventualmente ne richiami altri.
 
-# Esercizio 4
+3. Attenzione, sempre, ad inizializzare i contatori.
 
-Implementiamo il Punto 1 del tema, ovvero:
-1. Carichiamo le sfere descritte nel file __sfera.dat__ in un vettore di __sfera__ allocato dinamicamente.
-2. Contiamo il numero di sfere complessivo e per colore.
-3. Completiamo la descrizione delle sfere aggiungendo le specifiche di diametro nominale e tolleranza fornite nel file __tolleranze.dat__.
+4. Cercate di mettere le funzioni/procedure in un file separato in modo tale da esercitarvi con la compilazione separata. Provate ad usare il __make__ e il __makefile__.
 
-NOTA: il file __tolleranze.dat__ contiene 3 righe. Ciascuna riga specifica il diametro nominale e la tolleranza per uno specifico colore. In questo caso non è necessario "contare" e poi allocare. Ci sono diversi modi di procedere. Noi ne implementeremo uno, ma altre soluzioni sono possibili.
-
-# Esercizio 5
-
-A questo punto possiamo procedere con il completamento dei campi delle sfere, come richiesto nel Punto 2 del tema. 
+5. Come vi verrà chiesto in sede di esame, predisponete la soluzione del macro-esercizio creando una cartella __Cognome_matricola__ dove Cognome è il vostro cognome, matricola è la vostra matricola (ad es. __Tamascelli_123456__), che dovrà contenere tutti i file necessari alla compilazione del programa (file contenente il mail e le librerie), un makefile che consenta di compilare ed eseguire il programma tramite i comandi __make compila__ e __make esegui__ rispettivamente e i file di dati necessari all'esecuzione dell'esercizio stesso. Tutti i nomi dei file aperti dal programma dovranno riferirsi al path locale (per intenderci, dovrete usare cose tipo __file_in.open("dati.dat")__). 
+# ...fine macro-esercizio
 
 # Esercizio 6
-Il Punto 3 del tema chiede di ordinare il vettore di sfere in ordine di colore crescente. Il campo __col__ è di tipo __char__. Come ben noto i __char__ sono "moralmente" valori interi positivi rappresentati su 8 bit, e quindi ordinati. In particolare __'b' < 'g' < 'r'__. Possiamo quindi usare uno qualsiasi degli algoritmi di ordinamento nella nostra libreria, modificando solamente il tipo del vettore da ordinare e  la chiave di ordinamento.
+Implementate la struttura dati contenitore discussa a lezione per il tipo __T=int__ e per il tipo __T=sfera__. Cercate di individuare i punti in cui il codice che implementa il contenitore deve essere modificato in base al tipo di dato specifico contenuto.
 
-# Esercizio 7
 
-Procediamo con la soluzione del Punto 4. Si tratta di eliminare le sfere blu "difettate". L'operazione di eliminazione di un elemento da un vettore è nota, e abbiamo visto diverse possibili soluzioni (swap e right-shift). Prestate solo attenzione al fatto che SOLO il sottovettore delle sfere blu va considerato in questo passo, quindi il vettore su cui lavorare non è l'intero vettore delle sfere. Alternativamente, possiamo creare un nuovo vettore contenente solo le sfere blu, e lavorare su quello. Entrambi gli approcci sono validi. Noi ne sceglieremo uno.
-
-ATTENZIONE: ignorate il Punto 5 del tema d'esame: nel 2019 il programma del corso includeva l'uso di alcune istruzioni della libreria RooT (una cosa scritta da fisici, e quindi poco affidabile ;-) ....
-
-# Esercizio 8
-
-La consegna dell'esame prevede di copiare la cartella di lavoro in una cartella specifica. La cartella di lavoro dovrà includere:
-
-- tutti i file __.C__ (__.cpp__ o __.cxx__) e __.h__ necessari alla generazione del codice eseguibile.
-- un __makefile__ che consenta di compilare ed eseguire il programma tramite i comandi __make compila__ e __make esegui__
-- i file di dati e il file __risultati.dat__ dove il programma eseguibile avrà stampato quanto richiesto.
-
-Verificate che la cartella di lavoro contenga tutto il necessario, verificate che la compilazione e l'esecuzione vadano a buon fine, cancellate tutti i __.o__ e __.x__  e POI copiate la cartella di lavoro nella cartella di destinazione (vedi Esercizio 2).
-
-ATTENZIONE: per la copia non provate ad usare il comando scp indicato nel testo del tema: con le nuove configurazioni di laboratorio la copia via ssh da lab a lab non funziona più...
+# ...e buone feste a tutti voi!!!!
