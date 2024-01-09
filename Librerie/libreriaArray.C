@@ -38,6 +38,56 @@ int caricaDatiFile(char nomefile[], float vdati[], int maxdati){
 }
 
 
+int *caricaDatiFile(char nomefile[], int *np){
+
+   int *v=NULL;
+   ifstream ifile;
+
+   int appo;
+   int conta = 0;
+
+   ifile.open(nomefile);
+   if(ifile.fail()){
+      cout << "\nProblema apertura file " << nomefile <<". Esco!" << endl;
+      *np = -1;
+      return NULL;
+   }
+   //Se tutto a posto...
+   //Prima lettura file: conto i dati
+   ifile >> appo;
+   while(!ifile.eof()){
+      conta++;
+      ifile >> appo;
+   }
+   
+   //Si puo` fare cosi`  invece di 
+   //chiudere e riaprire lo stream...
+   ifile.clear();
+   ifile.seekg(0,ios::beg);
+   //"Nastro riavvolto...."
+
+   v = new int[conta];
+   if(v==NULL){
+      cout << endl << "Problema allocazione! Esco."<< endl;
+      *np = 0;
+      return v;
+   }
+   //Se tutto a posto
+   //Carico dati nell'array
+   for(int i=0; i<conta; i++)
+      ifile >> v[i];
+
+   ifile.close();
+   
+   *np = conta;
+   
+   return v;
+
+}
+
+
+
+
 int eliminaSwap(float v[], int pos, int ndati){
 
    if(pos >=0 and pos < ndati){

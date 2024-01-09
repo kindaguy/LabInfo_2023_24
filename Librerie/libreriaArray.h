@@ -16,6 +16,13 @@ using namespace std;
 
 int caricaDatiFile(char nomefile[], float vett[], int dim);
 
+//Questa funzione carica dati interi da file in un vettore dinamicamente allocato.
+//Restituisce il vettore (int *) e registra la dimensione del vettore
+//nel parametro riferimenti (int *pn)
+//Se errore file: return NULL e dimensione -1;
+//Se errore allocazioni: return NULL e dimensione 0;
+
+int *caricaDatiFile(char nomefile[], int *np);
 
 //Elimina l'elemento in posizione pos 
 //dal vettore v
